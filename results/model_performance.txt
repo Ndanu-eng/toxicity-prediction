@@ -1,0 +1,30 @@
+TOXICITY PREDICTION - MODEL PERFORMANCE
+========================================
+
+DATASET INFORMATION:
+  Total samples: 171
+  Total features: 1203
+  Toxic samples: 56 (32.7%)
+  NonToxic samples: 115 (67.3%)
+
+FEATURE SELECTION:
+  Optimal number of features: 50
+  Selection method: SelectKBest (ANOVA F-value)
+
+MODEL PERFORMANCE:
+  Cross-validation accuracy (5-fold): 0.6762 (+/- 0.0506)
+  Training accuracy: 1.0000
+  Testing accuracy: 0.6571
+
+CONFUSION MATRIX (Test Set):
+              Predicted
+              NonToxic  Toxic
+  Actual NonToxic    21      3
+        Toxic         9      2
+
+TOP 5 MOST IMPORTANT FEATURES:
+  1. ATSC7c: 0.0402
+  2. LipoaffinityIndex: 0.0377
+  3. AATSC5m: 0.0372
+  4. EE_Dt: 0.0361
+  5. SpMin4_Bhs: 0.0340
