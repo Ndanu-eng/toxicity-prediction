@@ -1,0 +1,18 @@
+HYPERPARAMETER TUNING RESULTS
+============================================================
+
+             Model  Best CV Accuracy  Test Accuracy                                                                                              Best Parameters
+Baseline (Default)          0.654233       0.628571                                                                                                      Default
+       Grid Search          0.705820       0.628571  {'max_depth': 5, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50}
+     Random Search          0.691534       0.657143 {'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 5, 'max_features': 'log2', 'max_depth': 8}
+
+GRID SEARCH BEST PARAMETERS:
+{'max_depth': 5, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50}
+
+RANDOM SEARCH BEST PARAMETERS:
+{'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 5, 'max_features': 'log2', 'max_depth': 8}
+
+PERFORMANCE IMPROVEMENT:
+Baseline CV: 0.6542
+Grid Search CV: 0.7058 (+0.0516)
+Random Search CV: 0.6915 (+0.0373)
